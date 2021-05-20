@@ -1,0 +1,12 @@
+---
+# File : base/kustomization.yaml
+# This is the master file which refers to all applicaions
+apiVersion: kustomize.config.k8s.io/v1beta1
+bases:
+  - ./00-ss-core
+  - ./03-ss-app
+commonLabels:
+  app.kubernetes.io/managed-by: Kustomize
+  app.kubernetes.io/part-of: sock-shop
+  environment: base
+kind: Kustomization

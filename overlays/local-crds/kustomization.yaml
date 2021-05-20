@@ -1,0 +1,10 @@
+---
+# File overlays/prod/kustomization
+apiVersion: kustomize.config.k8s.io/v1beta1
+bases:
+  - ../../basecrd
+namespace: ss-core
+commonLabels:
+  environment: local
+kind: Kustomization
+  

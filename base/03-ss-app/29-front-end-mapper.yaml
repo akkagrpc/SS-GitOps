@@ -1,0 +1,11 @@
+---
+apiVersion: getambassador.io/v2
+kind: Mapping
+metadata:
+  name: front-end
+spec:
+  prefix: /
+  # 172.23.102.73
+  service: front-end
+  host: ^ss\.\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b\.nip\.io$
+  host_regex: true
