@@ -20,5 +20,5 @@ metadata:
 spec:
   type: LoadBalancer
   externalIPs:
-  - 10.88.0.93
+  - 172.17.0.2
   
