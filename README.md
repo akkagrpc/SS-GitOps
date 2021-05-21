@@ -51,7 +51,7 @@ Here are the instructions for working with k0s cluster. If you already have a cl
 ```
 mkdir -p  ~/workspace/SockShop
 cd ~/workspace/SockShop
-git clone http://tfsdev1:8080/tfs/DataD/DevOps/_git/SockShop
+git clone http://tfsdev1:8080/tfs/DataD/DevOps/_git/SS-GitOps
 ```
 
 2. Start k0s. sudo is mandatory when using podman
