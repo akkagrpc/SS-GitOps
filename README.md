@@ -3,8 +3,8 @@ SS-GitOps project helps in quick setup and destroy  kubernetes cluster.
 It is organized into two modules
 1. SS-Core
 2. SS-App
-# Recorded session
-[![asciicast](https://asciinema.org/a/14.png)](https://asciinema.org/a/i8LdWWvYJlGyRYno8M32iZN0K)
+# Recorded session 
+[![asciicast](http://thedance.net/~roth/TECHBLOG/enteprise-horz.gif)](https://asciinema.org/a/i8LdWWvYJlGyRYno8M32iZN0K)
 
 ## SS-Core
 Core contains the foundation technologies needed for the cluster.
