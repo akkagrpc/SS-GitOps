@@ -3,8 +3,8 @@ SS-GitOps project helps in quick setup and destroy  kubernetes cluster.
 It is organized into two modules
 1. SS-Core
 2. SS-App
-# Recorded session 
-[![asciicast](http://thedance.net/~roth/TECHBLOG/enteprise-horz.gif)](https://asciinema.org/a/i8LdWWvYJlGyRYno8M32iZN0K)
+# Recorded session - Click the star ship to launch
+[![asciicast](http://thedance.net/~roth/TECHBLOG/enteprise-horz.gif)](https://asciinema.org/a/415634)
 
 ## SS-Core
 Core contains the foundation technologies needed for the cluster.
@@ -61,7 +61,7 @@ docker run -d --name k0s --ip 172.17.0.2 --hostname k0s --privileged -v k0s_vol:
 ```
 3. Get all configurations
 ```
-wsl users : mkdir -p "$(wslvar USERPROFILE)"/.kube
+wsl users : mkdir -p `wslpath "$(wslvar USERPROFILE)"`/.kube
 all users : mkdir -p ~/.kube
 
 docker exec k0s cat /var/lib/k0s/pki/admin.conf > k0s-cluster.conf && \
@@ -114,6 +114,9 @@ curl -Lk https://localhost/backend/
 11. Link to access ss
 ```
 https://ss.<IP ADDRESS>.nip.io
+
+sensible-browser  https://ss.`ip addr show eth0 | grep "inet\b" | awk '{print $2}' | cut -d/ -f1`.nip.io
+
 ```
 12. Destroy all deployments
 ```
